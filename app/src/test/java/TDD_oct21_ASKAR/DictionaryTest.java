@@ -14,4 +14,8 @@ public class DictionaryTest {
     {
         assertEquals(dict.getName().isEmpty(),true);
     }
+    @Test public void testOneTranslation() {
+        dict.addTranslation("contre", "against");
+        assertEquals(dict.getTranslation("contre"), "against");
+    }
 }
