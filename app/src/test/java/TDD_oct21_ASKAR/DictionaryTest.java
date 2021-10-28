@@ -3,8 +3,11 @@ package TDD_oct21_ASKAR;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
 
 import static org.hamcrest.Matchers.containsInAnyOrder;
+import static org.hamcrest.Matchers.hasItem;
 import static org.junit.Assert.*;
 
 public class DictionaryTest {
@@ -33,5 +36,12 @@ public class DictionaryTest {
     }*/
     @Test public void testSecondTranslation() {
         dict.addTranslation("manger", "eat");
-        assertThat(dict.getTranslation("manger"),containsInAnyOrder("eat"));    }
+        assertThat(dict.getTranslation("manger"),containsInAnyOrder("eat"));
+
+
+    }
+   @Test public void testTraductionInverse() {
+        dict.addTranslation("manger","eat");
+    }
+
 }
