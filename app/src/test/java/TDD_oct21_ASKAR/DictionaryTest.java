@@ -18,4 +18,7 @@ public class DictionaryTest {
         dict.addTranslation("contre", "against");
         assertEquals(dict.getTranslation("contre"), "against");
     }
+    @Test public void testOneTranslation() {
+        assertEquals(dict.addTranslation("contre","against"), "against"); // si on modifie getTranslation en la faisant retourner la traduction du mot ajouté on peut faire appel qu'a une méthode
+    }
 }
