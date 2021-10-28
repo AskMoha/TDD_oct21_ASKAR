@@ -1,14 +1,22 @@
 package TDD_oct21_ASKAR;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class DictionaryTest {
-    Dictionary dict = new Dictionary("example");
+    private Dictionary dict;
+    @Before
+    public void initialize () {
+        dict = new Dictionary("Example");
+    }
+    
+    // = new Dictionary("example");
     @Test
     public void testDictionaryName() {
-        assertEquals(dict.getName(),"example");
+        assertEquals(dict.getName(),"Example");
     }
     public void testDictionaryisEmpty()
     {
