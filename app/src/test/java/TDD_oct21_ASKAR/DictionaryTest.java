@@ -19,6 +19,6 @@ public class DictionaryTest {
         assertEquals(dict.getTranslation("contre"), "against");
     }
     @Test public void testOneTranslation() {
-        assertEquals(dict.addTranslation("contre","against"), "against"); // si on modifie getTranslation en la faisant retourner la traduction du mot ajouté on peut faire appel qu'a une méthode
+        assertEquals(dict.getTranslation("contre"), "against"); // en utilisant fake it on peut faire retourner against quel que soit le paramètre entré 
     }
 }
