@@ -1,3 +1,6 @@
+
+https://github.com/AskMoha/TDD_oct21_ASKAR
+
 1) Junit permet de faire des tests sur du code java
    Mockito permet de réaliser des tests sur des methodes dependantes
 
@@ -12,3 +15,5 @@ Traduction Multiples
 
 Traduction inverse
 3) J'ai fake it pour passer la question 2, ma solution étant d'inverser les keys et les values me semble meilleur
+
+
