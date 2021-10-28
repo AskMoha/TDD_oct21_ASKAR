@@ -9,3 +9,5 @@ en utilisant fake it on peut faire retourner against quel que soit le paramètre
 
 Traduction Multiples 
 1) On pourrait mettre une liste de traduction pour chaque mot, on transformerai le Map <String,String> en Map <String,ArrayList<String>> 
+
+Traduction inverse
