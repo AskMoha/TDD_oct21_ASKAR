@@ -4,6 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.junit.Assert.*;
 
 public class DictionaryTest {
@@ -24,7 +25,7 @@ public class DictionaryTest {
     }
     @Test public void testOneTranslation() {
         dict.addTranslation("contre", "against");
-        assertEquals(dict.getTranslation("contre"), "against");
+        assertThat(dict.getTranslation("contre"),containsInAnyOrder("against"));
     }
     /*@Test public void testOneTranslationWithOnlyOneMethod() {
         assertEquals(dict.getTranslation("contre"), "against");
@@ -32,6 +33,5 @@ public class DictionaryTest {
     }*/
     @Test public void testSecondTranslation() {
         dict.addTranslation("manger", "eat");
-        assertEquals(dict.getTranslation("manger"), "eat");
-    }
+        assertThat(dict.getTranslation("manger"),containsInAnyOrder("eat"));    }
 }
