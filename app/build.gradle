@@ -5,6 +5,7 @@
 // pour data providers -> JUnit 4 + package en plus ou TestNG ou JUnit 5
 
 plugins {
+    id "java"
     // application Java
     id 'application'
 
