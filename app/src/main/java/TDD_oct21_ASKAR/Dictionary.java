@@ -10,4 +10,12 @@ public class Dictionary {
     {
         return Name;
     }
+    public String getTranslation(String totranslate)
+    {
+        return "against";
+    }
+    public void addTranslation(String toTranslate,String Translated)
+    {
+
+    }
 }
