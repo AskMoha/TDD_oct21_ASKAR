@@ -21,4 +21,8 @@ public class DictionaryTest {
     @Test public void testOneTranslationWithOnlyOneMethod() {
         assertEquals(dict.getTranslation("contre"), "against"); // en utilisant fake it on peut faire retourner against quel que soit le paramètre entré
     }
+    @Test public void testSecondTranslation() {
+        dict.addTranslation("manger", "eat");
+        assertEquals(dict.getTranslation("manger"), "eat");
+    }
 }
