@@ -26,4 +26,8 @@ public class Dictionary {
     {
         Translations.put(toTranslate,Translated);
     }
+    public Map<String,String> getTranslations()
+    {
+        return Translations;
+    }
 }

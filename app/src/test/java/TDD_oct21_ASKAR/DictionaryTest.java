@@ -12,7 +12,7 @@ public class DictionaryTest {
     }
     public void testDictionaryisEmpty()
     {
-        assertEquals(dict.getName().isEmpty(),true);
+        assertEquals(dict.getTranslations().isEmpty(),true);
     }
     @Test public void testOneTranslation() {
         dict.addTranslation("contre", "against");
