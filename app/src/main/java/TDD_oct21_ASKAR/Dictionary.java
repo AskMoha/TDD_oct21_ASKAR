@@ -39,7 +39,17 @@ public class Dictionary {
     }
    public String getTraductionInverse(String reverse)
     {
-        return "manger";
+        int i=0;
+        Map<String,String> M= new HashMap<>();
+        for(Map.Entry<String,ArrayList<String>>e:Translations.entrySet())
+        {
+            for(String s:e.getValue()) {
+                M.put(e.getValue().get(i), e.getKey());
+                i++;
+            }
+            i=0;
+        }
+        return M.get(reverse);
     }
 
 }

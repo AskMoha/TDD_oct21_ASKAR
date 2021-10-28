@@ -11,3 +11,4 @@ Traduction Multiples
 1) On pourrait mettre une liste de traduction pour chaque mot, on transformerai le Map <String,String> en Map <String,ArrayList<String>> 
 
 Traduction inverse
+3) J'ai fake it pour passer la question 2, ma solution étant d'inverser les keys et les values me semble meilleur
