@@ -42,6 +42,7 @@ public class DictionaryTest {
     }
    @Test public void testTraductionInverse() {
         dict.addTranslation("manger","eat");
+        assertEquals("manger",dict.getTraductionInverse("eat"));
     }
 
 }

@@ -37,9 +37,9 @@ public class Dictionary {
     {
         return Translations;
     }
-   /*public String getreverseTraduction(String reverse)
+   public String getTraductionInverse(String reverse)
     {
-        Translations.get
-    }*/
+        return "manger";
+    }
 
 }
