@@ -12,7 +12,7 @@ public class DictionaryTest {
     public void initialize () {
         dict = new Dictionary("Example");
     }
-    
+
     // = new Dictionary("example");
     @Test
     public void testDictionaryName() {
